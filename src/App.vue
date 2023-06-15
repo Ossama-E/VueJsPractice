@@ -10,7 +10,7 @@
     <!-- <OptionsMenu /> -->
     <options-menu
       @add-click="setSelected('AddResource')"
-      @store-click="`setSelected('StoredMenu')"
+      @store-click="setSelected('StoredMenu')"
     ></options-menu>
     <component
       @submitted="submitAction"
