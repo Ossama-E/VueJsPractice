@@ -10,7 +10,7 @@
     <!-- <OptionsMenu /> -->
     <options-menu
       @add-click="setSelected('AddResource')"
-      @store-click="setSelected('StoredMenu')"
+      @store-click="`setSelected('StoredMenu')"
     ></options-menu>
     <component
       @submitted="submitAction"
@@ -50,7 +50,7 @@ export default {
         },
       ],
     };
-  },``
+  },
   methods: {
     submitAction(title, description, url) {
       this.resources.push({ title, description, url });
